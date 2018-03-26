@@ -23,6 +23,8 @@ link_final = []
 for l in link:
     link_final.append(str1+l)
 
+#downloading the images 
+
 for link in link_final:
         with open(basename(link), "wb") as f:
             f.write(requests.get(link).content)
